@@ -8,6 +8,9 @@ namespace WindowsFormsApplication1
 {
     static class Program
     {
+        public static frmMain main = new frmMain();
+        public static frmLogin login = new frmLogin();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,8 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            login = new frmLogin();
+            Application.Run(login);
         }
     }
 }
